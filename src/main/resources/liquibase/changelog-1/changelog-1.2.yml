@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create Product Sequence
+      author: gunay
+      changes:
+        - createSequence:
+            incrementBy: 50
+            sequenceName: product_sequence

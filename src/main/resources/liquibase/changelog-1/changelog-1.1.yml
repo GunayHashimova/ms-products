@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create Products Table
+      author: gunay
+      changes:
+        - createTable:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: products_name
+                  type: varchar(255)
+              - column:
+                  name: price
+                  type: DOUBLE
+              - column:
+                  name: quantity
+                  type: BIGINT
+              - column:
+                  name: country
+                  type: varchar(255)
+              - column:
+                  name: price_of_delivery
+                  type: DOUBLE
+              - column:
+                  name: link_for_pictures
+                  type: VARCHAR(255)
+              - column:
+                  name: updated_at
+                  type: timestamp
+              - column:
+                  name: created_at
+                  type: timestamp
